@@ -35,7 +35,33 @@ window.addEventListener('load', () => {
         });
 });
 
+window.addEventListener('load', () => {
 
+    // Hide Loader
+    document.getElementById('loader').style.opacity = '0';
+
+    setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+    }, 500);
+
+    // Show Welcome Popup
+    const modal = new bootstrap.Modal(
+        document.getElementById('welcomeModal')
+    );
+
+    modal.show();
+
+    document.getElementById('enterBtn')
+        .addEventListener('click', () => {
+
+            music.play().catch(err => {
+                console.log('Music autoplay blocked:', err);
+            });
+
+            startFireworks();
+            modal.hide();
+        });
+});
 // ================= MUSIC =================
 
 function toggleMusic() {
