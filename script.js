@@ -152,3 +152,28 @@ function createHeart() {
 
 // Generate hearts continuously
 setInterval(createHeart, 300);
+
+// ================= LOAD MORE GALLERY =================
+
+const galleryItems = document.querySelectorAll('.gallery-item');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+// Hide all images except first 6
+galleryItems.forEach((item, index) => {
+    if (index >= 5) {
+        item.style.display = 'none';
+    }
+});    
+
+loadMoreBtn.addEventListener('click', () => {
+
+    galleryItems.forEach((item) => {
+        item.style.display = 'block';
+    });
+
+    // Hide button after showing all images
+    loadMoreBtn.style.display = 'none';
+
+    // Refresh AOS animations
+    AOS.refresh();
+});
