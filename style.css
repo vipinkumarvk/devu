@@ -11,7 +11,7 @@ html, body {
     min-height: 100vh;
     background:
         linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-        url('images/banner.png');
+        url('./banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ html, body {
             rgba(0,0,0,0.55),
             rgba(0,0,0,0.55)
         ),
-        url('images/back-desktop.jpg');
+        url('./back-desktop.jpg');
 
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@ html, body {
                 rgba(0,0,0,0.55),
                 rgba(0,0,0,0.55)
             ),
-            url('images/back.jpg');
+            url('./back.jpg');
 
         background-position: center top;
         min-height: 450px;
@@ -93,7 +93,7 @@ html, body {
             rgba(255,255,255,0.85),
             rgba(255,255,255,0.85)
         ),
-        url('images/letter.png');
+        url('./letter.png');
 
     background-size: cover;
     background-position: center;
@@ -372,7 +372,7 @@ html, body {
     .hero{
         background:
             linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
-            url('images/banner-mobile.png.png');
+            url('./banner-mobile.png.png');
 
         background-size: cover;
         background-position: center;
