@@ -63,27 +63,32 @@ function startFireworks() {
 
     fireworks = new Fireworks.default(container, {
         autoresize: true,
-        opacity: 0.8,
-        acceleration: 1.05,
-        friction: 0.97,
-        gravity: 1.5,
-        particles: 120,
-        trace: 4,
-        explosion: 8,
-        intensity: 30,
-        flickering: 50,
+        opacity: 0.7,
+        acceleration: 1.02,
+        friction: 0.96,
+        gravity: 1.2,
+
+        particles: 60,      // Reduced from 120
+        trace: 2,           // Reduced from 4
+        explosion: 4,       // Reduced from 8
+        intensity: 20,      // Reduced from 30
+        flickering: 30,     // Reduced from 50
+
         lineStyle: 'round',
+
         hue: {
             min: 0,
             max: 360
         },
+
         delay: {
-            min: 20,
-            max: 40
-        },
-        rocketsPoint: {
-            min: 20,
+            min: 40,         // Increased delay
             max: 80
+        },
+
+        rocketsPoint: {
+            min: 30,
+            max: 70
         }
     });
 
@@ -163,7 +168,7 @@ galleryItems.forEach((item, index) => {
     if (index >= 5) {
         item.style.display = 'none';
     }
-});    
+});
 
 loadMoreBtn.addEventListener('click', () => {
 
