@@ -53,7 +53,10 @@ html, body {
 @media (max-width: 768px) {
 
     .birthday-modal{
-
+        border: none;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
         background-image:
             linear-gradient(
                 rgba(0,0,0,0.55),
@@ -62,7 +65,14 @@ html, body {
             url('./back.jpg');
 
         background-position: center top;
-        min-height: 450px;
+            min-height: 500px;
+
+    color: white;
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.4);
+
+    backdrop-filter: blur(10px);
     }
 }
 /* Letter Card */
